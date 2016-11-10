@@ -1,0 +1,649 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="php语法格式为.php结尾
+内容写在&amp;lt;?php ?&amp;gt;中间
+123&amp;lt;?php//coding...?&amp;gt;
+echo 为输出方法
+&amp;lt;?php echo &amp;quot;script&amp;quot;; ?&amp;gt;
+
+php页面转utf-8编码   
+
+header(&amp;quot;Content-Type: text/html;charset=utf-8&amp;quot;);
+
+有三种注释方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DKCHAN">
+<meta property="og:url" content="http://yoursite.com/2016/11/10/php/index.html">
+<meta property="og:site_name" content="DKCHAN">
+<meta property="og:description" content="php语法格式为.php结尾
+内容写在&amp;lt;?php ?&amp;gt;中间
+123&amp;lt;?php//coding...?&amp;gt;
+echo 为输出方法
+&amp;lt;?php echo &amp;quot;script&amp;quot;; ?&amp;gt;
+
+php页面转utf-8编码   
+
+header(&amp;quot;Content-Type: text/html;charset=utf-8&amp;quot;);
+
+有三种注释方">
+<meta property="og:updated_time" content="2016-11-10T08:23:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DKCHAN">
+<meta name="twitter:description" content="php语法格式为.php结尾
+内容写在&amp;lt;?php ?&amp;gt;中间
+123&amp;lt;?php//coding...?&amp;gt;
+echo 为输出方法
+&amp;lt;?php echo &amp;quot;script&amp;quot;; ?&amp;gt;
+
+php页面转utf-8编码   
+
+header(&amp;quot;Content-Type: text/html;charset=utf-8&amp;quot;);
+
+有三种注释方">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/11/10/php/"/>
+
+
+  <title>  | DKCHAN </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">DKCHAN</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-11-10T16:16:19+08:00" content="2016-11-10">
+              2016-11-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="php语法"><a href="#php语法" class="headerlink" title="php语法"></a>php语法</h3><p>格式为<code>.php</code>结尾</p>
+<p>内容写在<code>&lt;?php ?&gt;</code>中间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">//coding...</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<p><code>echo</code> 为输出方法</p>
+<p><code>&lt;?php echo &quot;script&quot;; ?&gt;</code></p>
+<ul>
+<li>php页面转utf-8编码   </li>
+</ul>
+<p><code>header(&quot;Content-Type: text/html;charset=utf-8&quot;);</code></p>
+<ul>
+<li><p>有三种注释方法</p>
+</li>
+<li><p>//单行注释</p>
+</li>
+<li><p># 单行注释</p>
+</li>
+<li><p>/<em>多行注释
+</em>/</p>
+</li>
+</ul>
+<h3 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h3><ul>
+<li>变量以\$开头</li>
+<li>变量名由字母或者下划线开头,由字母,下划线,数字组成</li>
+<li>区分大小写</li>
+<li>php和js一样是弱类型语言,不需要事先声明变量的数据类型</li>
+<li>例子:<br><code>$varible</code></li>
+</ul>
+<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$str = &quot;abc&quot;;//string</div><div class="line">$num = 123;//integer</div><div class="line">$float = 1.23;//double</div><div class="line">$bol = true;//boolean</div><div class="line">$arr = [&quot;1&quot;,&quot;2&quot;];//array</div></pre></td></tr></table></figure>
+<ul>
+<li><p>引用赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$var1 = &quot;foo&quot;;//X001这里是内存地址</div><div class="line">$var2 = $var1;//X002,地址改变</div><div class="line">$var3 = &amp;$var1;//X001,地址不变</div></pre></td></tr></table></figure>
+</li>
+<li><p>变量的变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$var = &quot;hello&quot;;</div><div class="line">$$var = &quot;world&quot;;</div><div class="line">echo $var.$hello;//输出helloworld</div></pre></td></tr></table></figure>
+</li>
+<li><p>PHP的超全局变量</p>
+<ul>
+<li><code>$_SERVER</code> 服务器变量,包含着服务器和客户端配置及当前请求环境的有关信息</li>
+<li><code>$_SERVER[&#39;SERVER_NAME&#39;]</code>服务器主机名</li>
+<li><code>$_SERVER[&#39;REMOTE_ADDR&#39;]</code>客户端IP地址</li>
+<li><code>$_SERVER[&#39;REQUEST_URI&#39;]</code>URL的路径部分</li>
+<li><code>$_SERVER[&#39;HTTP_USER_AGENT&#39;]</code>操作系统和浏览器的有关信息</li>
+</ul>
+</li>
+<li><p>常量</p>
+<ul>
+<li>常量指的是在程序执行中无法修改的值,如PI</li>
+<li>在脚本执行期间该值不能改变</li>
+<li>对大小写敏感,常量名通常是大写的</li>
+<li>常量是全局的,可以在脚本的任何地方引用</li>
+<li>分为内置常量和自定义常量</li>
+<li>常量用<code>define()</code>函数定义</li>
+<li><p>常量的定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">define(&quot;FOO&quot;,&quot;bar&quot;);</div><div class="line">echo FOO;//输出bar</div></pre></td></tr></table></figure>
+</li>
+<li><p>内置常量</p>
+<ul>
+<li><code>PHP_OS</code>php所在的操作系统名字</li>
+<li><code>PHP_VERSION</code>当前php版本</li>
+</ul>
+</li>
+<li>魔术常量<ul>
+<li><code>__LINE__</code>文件中的当前行号</li>
+<li><code>__FILE__</code>文件的完整路径和文件名</li>
+<li><code>__FUNCTION__</code>函数的名称</li>
+<li><code>__CLASS__</code>类的名称</li>
+<li><code>__METHOD__</code>类的方法名</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/10/operator/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="DKCHAN" />
+          <p class="site-author-name" itemprop="name">DKCHAN</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#php语法"><span class="nav-number">1.</span> <span class="nav-text">php语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的声明"><span class="nav-number">2.</span> <span class="nav-text">变量的声明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赋值"><span class="nav-number">3.</span> <span class="nav-text">赋值</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">DKCHAN</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
