@@ -102,7 +102,7 @@
     motion: true,
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     }
   };
 </script>
@@ -116,7 +116,7 @@
   <title> DKCHAN </title>
 </head>
 
-<body itemscope itemtype="//schema.org/WebPage" lang="">
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -171,7 +171,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -179,23 +179,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-            Archiv
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule" rel="section">
-            
-            Schedule
+            归档
           </a>
         </li>
       
@@ -238,8 +222,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/11/10/operator/" itemprop="url">
-                  Unbenannt
+                <a class="post-title-link" href="/2016/11/10/php/" itemprop="url">
+                  PHP基础认识
                 </a>
               
             
@@ -251,7 +235,172 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-10T16:16:19+08:00" content="2016-11-10">
+              2016-11-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="php语法"><a href="#php语法" class="headerlink" title="php语法"></a>php语法</h3><p>格式为<code>.php</code>结尾</p>
+<p>内容写在<code>&lt;?php ?&gt;</code>中间</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">//coding...</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<p><code>echo</code> 为输出方法</p>
+<p><code>&lt;?php echo &quot;script&quot;; ?&gt;</code></p>
+<ul>
+<li>php页面转utf-8编码   </li>
+</ul>
+<p><code>header(&quot;Content-Type: text/html;charset=utf-8&quot;);</code></p>
+<ul>
+<li><p>有三种注释方法</p>
+</li>
+<li><p>//单行注释</p>
+</li>
+<li><p># 单行注释</p>
+</li>
+<li><p>/<em>多行注释
+</em>/</p>
+</li>
+</ul>
+<h3 id="变量的声明"><a href="#变量的声明" class="headerlink" title="变量的声明"></a>变量的声明</h3><ul>
+<li>变量以\$开头</li>
+<li>变量名由字母或者下划线开头,由字母,下划线,数字组成</li>
+<li>区分大小写</li>
+<li>php和js一样是弱类型语言,不需要事先声明变量的数据类型</li>
+<li>例子:<br><code>$varible</code></li>
+</ul>
+<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$str = &quot;abc&quot;;//string</div><div class="line">$num = 123;//integer</div><div class="line">$float = 1.23;//double</div><div class="line">$bol = true;//boolean</div><div class="line">$arr = [&quot;1&quot;,&quot;2&quot;];//array</div></pre></td></tr></table></figure>
+<ul>
+<li><p>引用赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$var1 = &quot;foo&quot;;//X001这里是内存地址</div><div class="line">$var2 = $var1;//X002,地址改变</div><div class="line">$var3 = &amp;$var1;//X001,地址不变</div></pre></td></tr></table></figure>
+</li>
+<li><p>变量的变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$var = &quot;hello&quot;;</div><div class="line">$$var = &quot;world&quot;;</div><div class="line">echo $var.$hello;//输出helloworld</div></pre></td></tr></table></figure>
+</li>
+<li><p>PHP的超全局变量</p>
+<ul>
+<li><code>$_SERVER</code> 服务器变量,包含着服务器和客户端配置及当前请求环境的有关信息</li>
+<li><code>$_SERVER[&#39;SERVER_NAME&#39;]</code>服务器主机名</li>
+<li><code>$_SERVER[&#39;REMOTE_ADDR&#39;]</code>客户端IP地址</li>
+<li><code>$_SERVER[&#39;REQUEST_URI&#39;]</code>URL的路径部分</li>
+<li><code>$_SERVER[&#39;HTTP_USER_AGENT&#39;]</code>操作系统和浏览器的有关信息</li>
+</ul>
+</li>
+<li><p>常量</p>
+<ul>
+<li>常量指的是在程序执行中无法修改的值,如PI</li>
+<li>在脚本执行期间该值不能改变</li>
+<li>对大小写敏感,常量名通常是大写的</li>
+<li>常量是全局的,可以在脚本的任何地方引用</li>
+<li>分为内置常量和自定义常量</li>
+<li>常量用<code>define()</code>函数定义</li>
+<li><p>常量的定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">define(&quot;FOO&quot;,&quot;bar&quot;);</div><div class="line">echo FOO;//输出bar</div></pre></td></tr></table></figure>
+</li>
+<li><p>内置常量</p>
+<ul>
+<li><code>PHP_OS</code>php所在的操作系统名字</li>
+<li><code>PHP_VERSION</code>当前php版本</li>
+</ul>
+</li>
+<li>魔术常量<ul>
+<li><code>__LINE__</code>文件中的当前行号</li>
+<li><code>__FILE__</code>文件的完整路径和文件名</li>
+<li><code>__FUNCTION__</code>函数的名称</li>
+<li><code>__CLASS__</code>类的名称</li>
+<li><code>__METHOD__</code>类的方法名</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/10/operator/" itemprop="url">
+                  操作符
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-11-10T15:38:10+08:00" content="2016-11-10">
               2016-11-10
             </time>
@@ -341,108 +490,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/11/10/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-11-10T15:14:45+08:00" content="2016-11-10">
-              2016-11-10
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -485,7 +532,7 @@
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
@@ -532,11 +579,11 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
